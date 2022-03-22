@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  font-family: "Poppins";
+  position: relative;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  background: #111;
+  color: #9f9f9f;
+}
+
+.navbar {
+  background: transparent;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px rgba(41, 41, 41, 0.2);
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 4px 4px rgba(58, 58, 58, 0.2);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  transition: 0.5s;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.navbar a:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 0 4px 4px rgba(58, 58, 58, 0.2);
+}
+
+.navbar-brand img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.navbar-support {
+  margin-left: auto;
+}
+
+.navbar-support li {
+  list-style: none;
+  display: inline-block;
+}
+
+.name {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fafafa;
+}
+
+.name h1 {
+  font-size: 75px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.name .title {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.typing {
+  font-weight: 100 !important;
+  margin-left: 10px;
+  overflow: hidden;
+  animation: typing 5s steps(30) infinite, blink 1s infinite;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid #fff;
+  }
+}
