@@ -127,14 +127,14 @@ section {
   transform: translateY(0%);
 }
 
-#about {
+section {
   display: flex;
   align-items: center;
   flex-direction: column;
   color: #f9f9f9;
 }
 
-#about h1 {
+section h1 {
   margin-top: 120px;
   margin-bottom: 40px;
   font-size: 50px;
@@ -168,7 +168,7 @@ section {
   height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .about_desc h2 {
@@ -188,7 +188,7 @@ section {
 .about_info {
   display: grid;
   grid-template-columns: auto auto;
-  row-gap: 15px;
+  row-gap: 25px;
 }
 
 .about_info span {
@@ -202,15 +202,27 @@ section {
   text-decoration: none;
 }
 
+.about_info button {
+  width: 28%;
+  height: 40px;
+  font-size: 18px;
+  background: #009e66;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .about_social li {
-  display: inline;
+  display: inline-flex;
   list-style: none;
-  font-size: 30px;
+  font-size: 35px;
   margin-right: 15px;
   cursor: pointer;
 }
 
-.about_social li a {
+.about_social li i {
   color: #fff;
 }
 
@@ -222,10 +234,10 @@ section {
 
 .about_social li:hover i {
   transform: translateY(-5px);
-  /* background-color: #fff; */
+  /* background: #fff; */
 }
 
-.about_social .social_git:hover i {
+/* .about_social .social_git:hover i {
   color: #333;
 }
 
@@ -239,7 +251,7 @@ section {
 
 .about_social .social_mail:hover i {
   color: #ea4335;
-}
+} */
 
 @keyframes typing {
   0%,
